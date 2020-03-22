@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Graphics Projects by Amber Hung</title>
+    <meta name="description" content="Graphics Projects done by Amber Hung" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <!-- <link rel="apple-touch-icon" href="icon.png"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and
+        security.
+      </p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <a href="https://github.com/ooxxro/graphics" class="fork-me">
+      <img
+        width="149"
+        height="149"
+        src="https://github.blog/wp-content/uploads/2008/12/forkme_right_red_aa0000.png?resize=149%2C149"
+        class="attachment-full size-full"
+        alt="Fork me on GitHub"
+        data-recalc-dims="1"
+      />
+    </a>
+
+    <h1>Graphics Projects by Amber Hung</h1>
+    <p style="color: red">
+      Please use latest Google Chrome or Firefox for this page do display properly.
+    </p>
+    <p>These projects range from 2D Canvas and SVG, to 3D WebGL using Three.js</p>
+
+    <!-- wb2 -->
+    <!-- canvas draw: keroppi -->
+    <h2>Keroppi Image drew entirely with canvas API</h2>
+    <p>Iteractions: This is static, no interactions.</p>
+    <canvas id="canvas-keroppi" width="500px" height="500px"></canvas>
+    <script src="js/canvas-keroppi.js"></script>
+    <!-- canvas animation: fireworks -->
+    <h2>Fireworks</h2>
+    <p>
+      Iteractions: Click to shoot firework. There are also automatic timer fireworks. There is a
+      small chance to have keroppi firework!
+    </p>
+    <canvas id="fireworks" width="600px" height="400px"></canvas>
+    <script src="js/fireworks.js"></script>
+
+    <!-- wb3 -->
+    <!-- quadcopter -->
+    <h2>Quadcopters</h2>
+    <p>
+      Iteractions: Arrow keys to control quadcopter 3; mouse click to place target and quadcopter 2
+      will follow; quadcopter 1 just spins in circles.
+    </p>
+    <canvas id="quadcopter" width="600px" height="600px"></canvas>
+    <script src="js/quadcopter.js"></script>
+
+    <!-- svg instancing -->
+    <h2>SVG exercise: instancing</h2>
+    <p>Interactions: This is static, no interaction.</p>
+    <img id="svg-instancing" src="svg-instancing.svg" alt="svg instancing exercise" />
+
+    <!-- wb4 -->
+    <!-- flocking boids -->
+    <h2>Flocking Boids</h2>
+    <div>
+      <h3>How it works:</h3>
+      <ul>
+        <li>Move your mouse to move the food.</li>
+        <li>
+          ANGRY fish will become red and chase the target, either the food under cursor or a pink
+          fish.
+        </li>
+        <li>Fish will become ANGRY if they collide more than 50 times.</li>
+        <li>
+          ANGRY fish will be happy if they either got their target, or forget after 7 seconds.
+        </li>
+        <li>
+          When an ANGRY fish ate the food (cursor), it becomes pink, and another random fish will
+          become ANGRY, and start to chase this pink fish.
+        </li>
+      </ul>
+    </div>
+    <div class="controls">
+      <h3>Controls for flocks</h3>
+      <button id="add">Add 10</button><button id="clear">Clear</button>
+      <label for="speed"
+        >speed:
+        <input type="range" width="100px" min="0" max="10" step=".1" value="5" id="speed" />
+      </label>
+      <label for="alignment"
+        >alignment:
+        <input
+          type="range"
+          width="100px"
+          min="0"
+          max="0.3"
+          step=".01"
+          value="0.05"
+          id="alignment"
+        />
+      </label>
+      <label for="separation"
+        >separation:
+        <input
+          type="range"
+          width="100px"
+          min="0"
+          max="0.3"
+          step=".01"
+          value="0.03"
+          id="separation"
+        />
+      </label>
+      <label for="cohesion"
+        >cohesion:
+        <input type="range" width="100px" min="0" max="0.3" step=".01" value="0.01" id="cohesion" />
+      </label>
+    </div>
+    <canvas
+      id="flock"
+      height="1200px"
+      width="1200px"
+      style="cursor: none; border:0px solid black; width: 600px; height: 600px"
+    ></canvas>
+    <script src="js/flock.js"></script>
+    <!-- end: flock -->
+
+    <!-- wb5 -->
+    <!-- train -->
+    <h2>Train and Bezier Curves</h2>
+    <div>
+      <h3>How it works:</h3>
+      <ul>
+        <li>Click checkbox RUN to start/pause the train.</li>
+        <li>
+          Drag the red dots on the rail to move and modify rail shape.
+        </li>
+        <li>"SHIFT+Click" to add a point to rails (will add to end of the rail dots list).</li>
+        <li>
+          "CTRL+Click" on a red dot will remove it.
+        </li>
+        <li>
+          You can change number of carts, toggle simple track, toggle arc-length parameterization in
+          the control section below.
+        </li>
+      </ul>
+    </div>
+    <div class="controls" id="train-controls">
+      <h3>Controls for Train</h3>
+      number of carts: <span id="train-num-carts">6</span>
+      <button id="train-add-cart">+</button>
+      <button id="train-minus-cart">-</button>
+    </div>
+    <canvas id="train" height="600px" width="600px"></canvas>
+    <script type="module" src="js/train.js"></script>
+    <!-- end: train -->
+
+    <!-- wb6 -->
+    <!-- snowman -->
+    <h2>3D Snowman</h2>
+    <p>Drew with Three.js</p>
+    <div id="snowman"></div>
+    <script src="js/8-Snowman.js" type="module"></script>
+
+    <!-- museum -->
+    <h2>3D Museum</h2>
+    <p>Drew with Three.js</p>
+    <div id="museum_area"></div>
+    <div id="button_area">
+      <button type="button" id="main_cam">Main Camera</button>
+      <button type="button" id="cam_1">Camera 1</button>
+      <button type="button" id="cam_2">Camera 2</button>
+      <button type="button" id="cam_3">Camera 3</button>
+      <button type="button" id="cam_4">Camera 4</button>
+    </div>
+    <script src="js/9-Museum.js" type="module"></script>
+
+    <!-- wb7 -->
+    <!-- Parachute -->
+    <h2>3D Parachute Animation!</h2>
+    <div id="parachute"></div>
+    <script src="js/parachute.js" type="module"></script>
+
+    <!-- wb8 -->
+    <!-- texture houses -->
+    <h2>3D Houses with Textures</h2>
+    <div id="texture-houses"></div>
+    <script src="js/6-1-buildingdemo.js" type="module"></script>
+
+    <!-- wb9 -->
+    <!-- env-map -->
+    <h2>3D Skybox and Environment Map</h2>
+    <div id="env-map-container"></div>
+    <script src="js/env-map.js" type="module"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <!-- <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script> -->
+  </body>
+</html>

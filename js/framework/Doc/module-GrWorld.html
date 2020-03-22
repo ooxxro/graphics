@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Module: GrWorld</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Module: GrWorld</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Classes</h3>
+
+        <dl>
+            <dt><a href="module-GrWorld.GrWorld.html">GrWorld</a></dt>
+            <dd></dd>
+        </dl>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Type Definitions</h3>
+
+        
+                
+<h4 class="name" id="~GrWorldProperties">GrWorldProperties</h4>
+
+
+
+
+<div class="description">
+    <p>Document the parameters for making a world - all are optional
+we'll guess at something if you don't give it to us</p>
+</div>
+
+
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>camera</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>use this camera if passed</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>fov</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>camera property if we make one</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>near</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>camera property if we make one</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>far</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>camera property if we make one</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>renderer</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>if you don't give one, we'll make it</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>renderparams</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>parameters for making the renderer</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>width</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>canvas size</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>height</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>canvas size</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>where</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>where in the DOM to insert things</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>lights</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>a list of lights, or else default ones are made</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>lightBrightness</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    .75
+                
+                </td>
+            
+
+            <td class="description last"><p>brightness of the default lights</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>lightColoring</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    "cool-to-warm"
+                
+                </td>
+            
+
+            <td class="description last"><p>either &quot;c&quot;ool-to-warm, &quot;w&quot;hite, or e&quot;x&quot;treme</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>sideLightColors</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>to make extreme lighting</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ambient</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    .5
+                
+                </td>
+            
+
+            <td class="description last"><p>brightness of the ambient light in default light</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>groundplane</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>can be a groundplane, or False (otherwise, one gets made)</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>groundplanecolor</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    "green"
+                
+                </td>
+            
+
+            <td class="description last"><p>if we create a ground plane, what color</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>groundplanesize</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    5
+                
+                </td>
+            
+
+            <td class="description last"><p>if we create a ground plane, how big</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>lookfrom</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>where to put the camera (only if we make the camera)</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>lookat</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>where to have the camera looking (only if we make the camera)</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>runbutton</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLInputElement</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>a checkbox (HTML) to switch things on or off (can be undefined)</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>speedcontrol</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLInputElement</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>a slider to get the speed (must be an HTML element, not a LabelSlider)</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="GrWorld.js.html">GrWorld.js</a>, <a href="GrWorld.js.html#line27">line 27</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+            
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-AutoUI.html">AutoUI</a></li><li><a href="module-GrObject.html">GrObject</a></li><li><a href="module-GrWorld.html">GrWorld</a></li><li><a href="module-SimpleBehaviors.html">SimpleBehaviors</a></li><li><a href="module-SimpleObjects.html">SimpleObjects</a></li><li><a href="module-TestObjects.html">TestObjects</a></li><li><a href="module-WorldController.html">WorldController</a></li></ul><h3>Classes</h3><ul><li><a href="FbxGrObject_FbxGrObject.html">FbxGrObject</a></li><li><a href="module-AutoUI.AutoUI.html">AutoUI</a></li><li><a href="module-AutoUI.WorldUI.html">WorldUI</a></li><li><a href="module-GrObject.GrObject.html">GrObject</a></li><li><a href="module-GrWorld.GrWorld.html">GrWorld</a></li><li><a href="module-SimpleObjects.GrCube.html">GrCube</a></li><li><a href="module-SimpleObjects.GrSphere.html">GrSphere</a></li><li><a href="module-SimpleObjects.GrSquareSign.html">GrSquareSign</a></li><li><a href="module-SimpleObjects.GrTorusKnot.html">GrTorusKnot</a></li><li><a href="module-TestObjects.BetterDelayTest.html">BetterDelayTest</a></li><li><a href="module-TestObjects.DelayTest.html">DelayTest</a></li><li><a href="module-TestObjects.HingeCube.html">HingeCube</a></li><li><a href="module-TestObjects.MaterialDelayTest.html">MaterialDelayTest</a></li><li><a href="module-TestObjects-CheckSign.html">CheckSign</a></li><li><a href="module-WorldController.WorldController.html">WorldController</a></li><li><a href="ObjGrObject.html">ObjGrObject</a></li><li><a href="SimpleGroundPlane.html">SimpleGroundPlane</a></li></ul><h3>Global</h3><ul><li><a href="global.html#loadFragmentShader">loadFragmentShader</a></li><li><a href="global.html#loadVertexShader">loadVertexShader</a></li><li><a href="global.html#normObject">normObject</a></li><li><a href="global.html#shaderMaterial">shaderMaterial</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.3</a> on Sat Oct 19 2019 18:47:57 GMT-0500 (Central Daylight Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

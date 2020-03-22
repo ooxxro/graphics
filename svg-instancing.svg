@@ -1,0 +1,167 @@
+<!-- here is a big, empty SVG! make it into something interesting! -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="600px" width="600px">
+    <rect x="0" y="0" width="600" height="600" fill="pink" />
+
+    <defs>
+        <g id="keroppi">
+            <circle cx="0" cy="0" r="160" fill="#b4eb34" />
+            <!-- right eye -->
+            <circle cx="70" cy="-120" r="75" fill="#ffffff" />
+            <circle cx="50" cy="-120" r="25" fill="#421d04" />
+            <!-- left eye -->
+            <circle cx="-70" cy="-120" r="75" fill="#ffffff" />
+            <circle cx="-50" cy="-120" r="25" fill="#421d04" />
+            <!-- mouth -->
+            <path
+                d="
+                    M-70 -20
+                    A80 80 0 0 0 70 -20
+                "
+                stroke="#421d04"
+                stroke-width="8"
+                fill="none"
+                stroke-linecap="round"
+            />
+
+            <use transform="translate(116, -10) scale(1, 0.5)" href="#shy" />
+            <use transform="translate(-116, -10) scale(1, 0.5)" href="#shy" />
+
+            <!-- body shape -->
+            <path
+                d="
+                    M-151.2829721 52.091
+                    A160 160 0 0 0 151.2829721 52.091
+                "
+                fill="#fff"
+            />
+            <!-- cloth middle red -->
+            <path
+                d="
+                    M-39 52.091
+                    L38 52.091
+                    L39.25 155.111
+                    A160 160 0 0 1 -39.25 155.111
+                "
+                fill="#f00"
+            />
+            <!-- cloth right red -->
+            <path
+                id="cloth-right-red"
+                d="
+                    M106 52.091
+                    L151 52.091
+                    A160 160 0 0 1 106 119.85
+                "
+                fill="#f00"
+            />
+            <!-- cloth right red -->
+            <use transform="scale(-1, 1)" href="#cloth-right-red" />
+
+            <!-- tie -->
+            <g id="tie" fill="#07badd">
+                <circle cx="0" cy="100" r="25" fill="#07badd" />
+                <use transform="translate(0, 100) rotate(90)" href="#tie-side" />
+                <use transform="translate(0, 100) rotate(-90)" href="#tie-side" />
+            </g>
+        </g>
+
+        <g id="shy">
+            <circle cx="0" cy="0" r="33" fill="red" opacity="0.4" />
+        </g>
+
+        <path
+            id="tie-side"
+            d="
+                M0 0
+                L20 50
+                L-20 50
+            "
+        />
+
+        <g id="big-eye-guy">
+            <circle cx="0" cy="0" r="160" fill="#b4eb34" />
+            <!-- right eye -->
+            <circle cx="0" cy="-100" r="100" fill="#ffffff" />
+            <circle cx="0" cy="-100" r="40" fill="#421d04" />
+            <!-- mouth -->
+            <path
+                transform="translate(0, 20)"
+                d="
+                    M-70 -20
+                    A80 80 0 0 0 70 -20
+                "
+                stroke="#421d04"
+                stroke-width="8"
+                fill="none"
+                stroke-linecap="round"
+            />
+
+            <!-- body shape -->
+            <path
+                d="
+                    M-151.2829721 52.091
+                    A160 160 0 0 0 151.2829721 52.091
+                "
+                fill="#fff"
+            />
+            <!-- cloth middle red -->
+            <path
+                d="
+                    M-39 52.091
+                    L38 52.091
+                    L39.25 155.111
+                    A160 160 0 0 1 -39.25 155.111
+                "
+                fill="#0a0"
+            />
+            <!-- cloth right red -->
+            <path
+                id="cloth-right-green"
+                d="
+                    M106 52.091
+                    L151 52.091
+                    A160 160 0 0 1 106 119.85
+                "
+                fill="#0a0"
+            />
+            <!-- cloth right red -->
+            <use transform="scale(-1, 1)" href="#cloth-right-green" />
+
+            <!-- tie -->
+            <g id="tie-pink" fill="#ffaf59">
+                <circle cx="0" cy="100" r="25" />
+                <use transform="translate(0, 100) rotate(90)" href="#tie-side" />
+                <use transform="translate(0, 100) rotate(-90)" href="#tie-side" />
+            </g>
+        </g>
+    </defs>
+
+    <use transform="translate(55, 50) scale(0.2, 0.2)" href="#big-eye-guy" />
+    <use transform="translate(125, 50) scale(0.2, 0.2)" href="#keroppi" />
+    <use transform="translate(195, 50) scale(0.2, 0.2)" href="#big-eye-guy" />
+    <use transform="translate(265, 50) scale(0.2, 0.2)" href="#keroppi" />
+    <use transform="translate(335, 50) scale(0.2, 0.2)" href="#big-eye-guy" />
+    <use transform="translate(405, 50) scale(0.2, 0.2)" href="#keroppi" />
+    <use transform="translate(475, 50) scale(0.2, 0.2)" href="#big-eye-guy" />
+    <use transform="translate(545, 50) scale(0.2, 0.2)" href="#keroppi" />
+
+    <use transform="translate(55, 120) scale(0.2, -0.2)" href="#big-eye-guy" />
+    <use transform="translate(125, 120) scale(0.2, -0.2)" href="#keroppi" />
+    <use transform="translate(195, 120) scale(0.2, -0.2)" href="#big-eye-guy" />
+    <use transform="translate(265, 120) scale(0.2, -0.2)" href="#keroppi" />
+    <use transform="translate(335, 120) scale(0.2, -0.2)" href="#big-eye-guy" />
+    <use transform="translate(405, 120) scale(0.2, -0.2)" href="#keroppi" />
+    <use transform="translate(475, 120) scale(0.2, -0.2)" href="#big-eye-guy" />
+    <use transform="translate(545, 120) scale(0.2, -0.2)" href="#keroppi" />
+
+    <use transform="translate(60, 230) scale(0.25, 0.25) rotate(90)" href="#big-eye-guy" />
+    <use transform="translate(160, 230) scale(0.25, 0.25) rotate(-90)" href="#keroppi" />
+    <use transform="translate(250, 230) scale(0.25, 0.25) rotate(90)" href="#big-eye-guy" />
+    <use transform="translate(350, 230) scale(0.25, 0.25) rotate(-90)" href="#keroppi" />
+    <use transform="translate(440, 230) scale(0.25, 0.25) rotate(90)" href="#big-eye-guy" />
+    <use transform="translate(540, 230) scale(0.25, 0.25) rotate(-90)" href="#keroppi" />
+
+    <use transform="translate(160, 450) scale(0.85, 0.85) rotate(15)" href="#big-eye-guy" />
+    <use transform="translate(440, 450) scale(0.85, 0.85) rotate(-15)" href="#keroppi" />
+</svg>
+
